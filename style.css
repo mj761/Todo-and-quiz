@@ -1,0 +1,26 @@
+/* Quiz background styling */
+.quiz{
+    background-color: #d4418e;
+    background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);
+}
+
+/* To do list styling */
+  input[type=text],
+  input[type=text]:focus{
+    color: black;
+    border: none;
+    background: rgba(0,0,0,0.2);
+    max-width: 400px;
+  }
+  .todos li{
+    color: azure;
+    background:#257CE0;
+    max-width: 400px;
+    margin-left: 32%;
+  }
+  .delete{
+    cursor: pointer;
+  }
+  .filtered{
+    display: none !important;
+  }

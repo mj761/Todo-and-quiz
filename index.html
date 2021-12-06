@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Disney Quiz & To-do</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- top section -->
+  <div class="intro py-3 text-center">
+    <div class="container">
+      <h2 class="text-primary display-3 my-4 font-weight-bold">Disney Quiz</h2>
+    </div>
+  </div>
+
+  <!-- result section -->
+  <div class="result py-4 d-none bg-light text-center">
+    <div class="container lead">
+      <p>You are <span class="text-primary display-4 p-3">0%</span> of a Disney fan</p>
+    </div>
+  </div>
+
+  <!-- quiz section -->
+  <div class="quiz py-4 ">
+    <div class="container">
+      <h2 class="my-5 text-white">On with the questions...</h2>
+
+      <form class="quiz-form text-light">
+        <div class="my-5">
+          <p class="lead font-weight-normal">1. Which Disney princess were the very first?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="A" checked>
+            <label class="form-check-label">Cinderella</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="B">
+            <label class="form-check-label">Snow White</label>
+          </div>
+        </div>
+        <div class="my-5">
+          <p class="lead font-weight-normal">What is the name of the Cameleon in Tangled?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="A" checked>
+            <label class="form-check-label">Pascal</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="B">
+            <label class="form-check-label">Peppy</label>
+          </div>
+        </div>
+        <div class="my-5">
+          <p class="lead font-weight-normal">In which Disney toon did Mickey Mouse first appear? </p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="A" checked>
+            <label class="form-check-label">Plain Crazy</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="B">
+            <label class="form-check-label">Steamboat Willy</label>
+          </div>
+        </div>
+        <div class="my-5">
+          <p class="lead font-weight-normal">What is the name of the newest Disney Movie from 2021?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="A" checked>
+            <label class="form-check-label">Enchanced</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="B">
+            <label class="form-check-label">Enchanto</label>
+          </div>
+        </div>
+        <div class="text-center">
+          <input type="submit" class="btn btn-light"> 
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- To-Do list  -->
+
+  
+    <div class="container">
+  
+      <header class="text-center text-dark my-4">
+        <h1 class="mb-4">To-do List</h1>
+        <form class="search">
+          <input class="form-control m-auto" type="text" name="search" placeholder="search to-dos" />
+        </form>
+      </header>
+  
+      <ul class="list-group todos mx-auto text-dark">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span>play Animal Crossing</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span>Buy Pokémon Legends: Arceus</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          <span>Remember to eat food</span>
+          <i class="far fa-trash-alt delete"></i>
+        </li>
+      </ul>
+  
+      <form class="add text-center my-4">
+        <label class="text-dark">Add a new to-do...</label>
+        <input class="form-control m-auto" type="text" name="add" />
+      </form>
+  
+    </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
